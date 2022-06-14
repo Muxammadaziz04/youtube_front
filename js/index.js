@@ -9,7 +9,7 @@ let videoTemplate = document.getElementById('videoTemplate').content
 let users = []
 let videos = []
 
-let user = JSON.parse(localStorage.getItem('user'))
+let user = JSON.parse(localStorage.getItem('user')) || []
 
 if(user.avatar){
     userAva.setAttribute('src', user.avatar)
