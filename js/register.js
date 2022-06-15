@@ -30,7 +30,7 @@ registerForm.onsubmit = async (event) => {
         if(res.status == 201){
             localStorage.setItem('user', JSON.stringify(res.user))
             localStorage.setItem('token', JSON.stringify(res.token))
-            window.location.replace('index.html')
+            window.location.replace('admin.html')
         } else {
             errorMessage.textContent = 'wrong username or password'
         }
